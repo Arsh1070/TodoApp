@@ -128,7 +128,7 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
   }
-  .btns_active {
+  .btNs_active {
     width: 4vw;
     padding: 5px 0;
     font-size: 16px;
@@ -141,7 +141,7 @@ input[type="text"] {
     width: 85%;
     margin-right: 7px;
     height: auto;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
   }
   .btNs_2 {
@@ -157,7 +157,7 @@ input[type="text"] {
   .btNs_1 {
     width: 80%;
     height: auto;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
   }
   .btNs_2 {
@@ -168,7 +168,7 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
   }
-  .btns_active {
+  .btNs_active {
     width: 4vw;
     padding: 5px 0;
     font-size: 15px;
