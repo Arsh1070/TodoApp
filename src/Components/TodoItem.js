@@ -25,36 +25,35 @@ const TodoItem = (props) => {
     <>
       {mode === "list" ? (
         <li>
-          <div className="btns">
-            <div className="btns_1" style={{ opacity: doneValue ? 0.06 : 1.0 }}>
+          <div className="list_items">
+            <div className="btNs_1" style={{ opacity: doneValue ? 0.06 : 1.0 }}>
               {children}
             </div>
-            <div className="btns_2">
+            <div className="btNs_2">
               {doneValue ? (
                 <>
-                  <button disabled="disabled" className="btns_inactive">
+                  <button disabled="disabled" className="btNs_inactive">
                     <i class="far fa-save"></i>
                   </button>
-                  <button disabled="disabled" className="btns_inactive">
+                  <button disabled="disabled" className="btNs_inactive">
                     <i class="far fa-check-circle"></i>
                   </button>
                 </>
               ) : (
                 <>
-                  <button onClick={handleEdit} className="btns_active edit">
+                  <button onClick={handleEdit} className="btNs_active">
                     <i class="fas fa-edit"></i>
                   </button>
-                  <button onClick={handleDone} className="btns_active done">
+                  <button onClick={handleDone} className="btNs_active">
                     <i class="far fa-check-circle"></i>
                   </button>
                 </>
               )}
-              <button onClick={handleDelete} className="btns_active delete">
+              <button onClick={handleDelete} className="btNs_active">
                 <i class="fas fa-trash-alt"></i>
               </button>
             </div>
           </div>
-          <br></br>
         </li>
       ) : (
         <li>
@@ -65,11 +64,11 @@ const TodoItem = (props) => {
             onChange={(e) => setInr(e.target.value)}
           />
           {inr.length > 0 ? (
-            <button onClick={handleSave} className="btns_active">
+            <button onClick={handleSave} className="btNs_active">
               <i class="far fa-save"></i>
             </button>
           ) : (
-            <button disabled="disabled" className="btns_active">
+            <button disabled="disabled">
               <i class="far fa-save"></i>
             </button>
           )}

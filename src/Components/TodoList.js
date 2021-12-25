@@ -84,13 +84,15 @@ const TodoList = () => {
   };
 
   return (
-    <div className="todo_container">
-      <div className="todo_header">
-        <h1>My TodoList</h1>
+    <>
+      <div className="header_container">
+        <div className="todo_header">
+          <h1>My TodoList</h1>
 
-        <TodoInput addItem={addItem} taskLength={Tasks.length} />
+          <TodoInput addItem={addItem} taskLength={Tasks.length} />
+        </div>
       </div>
-      <div>
+      <div className="item_container">
         <ol>
           {Tasks.map((item) => {
             return (
@@ -113,7 +115,7 @@ const TodoList = () => {
           })}
         </ol>
       </div>
-    </div>
+    </>
   );
 };
 export default TodoList;
