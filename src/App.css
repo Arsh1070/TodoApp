@@ -152,14 +152,6 @@ input[type="text"] {
     justify-content: center;
     align-items: center;
   }
-  .btns_active {
-    width: 4vw;
-    padding: 5px 0;
-    font-size: 15px;
-    cursor: pointer;
-    border: none;
-    margin-left: 40px;
-  }
 }
 @media screen and (max-width: 495px) {
   .btNs_1 {
