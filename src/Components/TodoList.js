@@ -7,7 +7,6 @@ const Reducer = (initial, action) => {
   switch (action.type) {
     case "Add_item":
       return [
-        ...initial,
         {
           content: action.input,
           id: action.id,
@@ -15,6 +14,7 @@ const Reducer = (initial, action) => {
           CreateTime: action.createTime,
           done: false,
         },
+        ...initial,
       ];
     case "Del_item":
       return initial.filter((item) => item.content !== action.input);
